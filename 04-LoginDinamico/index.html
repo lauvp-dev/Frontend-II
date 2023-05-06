@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es" style="scroll-behavior: smooth">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Formularios!" />
+    <title>Formularios!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header>
+    </header>
+    <main>
+        <div class="super">
+            <div class="container">
+                <div class="izquierda">
+                    <form action="php.js" method="POST">
+                        <div class="titulo">
+                            <h1>Create Account</h1>
+                            <nav>
+                                <ul>
+                                    <li><a href="#"><i class="fab fa-google"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-vk"></i></a></li>
+                                </ul>
+                            </nav>
+                            <h2>or use your email for registration:</h2>
+                        </div>
+                        <label for="name">Name</label>
+                        <input type="name" name="name" id="name" placeholder="Name" />
+                        <small id="mensajeNombre" class="oculto">Sólo letras, mínimo 3 caracteres y máximo 25.</small>
+                        
+                        <label for="email">Usuario</label>
+                        <input type="text" name="email" id="email" placeholder="Email" />
+                        <small id="mensajeEmail" class="oculto">No es un formato de correo válido.</small>
+
+                        <label for="pass">Contraseña</label>
+                        <input type="password" name="pass" id="pass" placeholder="Password" />
+                        <small id="mensajePass" class="oculto">La contraseña debe tener entre 8 y 20 caracteres.</small>
+
+                        <div class="checkagree">
+                            <input type="checkbox" name="agree" id="agree" />
+                            <label for="agree">I agree to the <a href="#">Terms</a> and <a href="#">Privacy Policy</a></label>
+                            <p id="mensajeCheck" class="oculto">Debe aceptar los Términos y Condiciones.</p>
+                        </div>
+                        <div class="form-buttons">
+                            <button type="submit" disabled id="up">Sign Up</button>
+                            <button type="submit" disabled id="in">Sign In</button>
+                        </div>
+                    </form>
+                </div>
+                <img src="img/fondo.jpg" alt="fondo">
+            </div>
+        </div>
+    </main>
+    <footer>Todos los derechos reservados a FRONTEND II.</footer>
+    <script src="js/app.js"></script>
+</body>
+
+</html>

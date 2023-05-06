@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap');
+
+* {
+  font-family: 'Libre Franklin', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color:#A4B2B2;
+}
+
+/********* HEADER *********/
+header {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  height: 127px;
+}
+
+a {
+  color: black;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.imagenLogo {
+  align-self: center;
+  color: white;
+  font-size: 100px;
+  padding: 20px;
+}
+
+nav {
+  align-self: center;
+  background-color: #E5E5E5;  
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around ;
+  height: 54px;
+  padding: 2rem 5rem;
+  margin-right: 1.5rem;
+  width: 100%;
+}
+
+ul {
+  align-items: center;
+  display:flex;
+  justify-content: space-around;
+  list-style: none;      
+}
+
+li {
+  box-shadow: 0 0.25rem 0.25rem 0 #00000040;
+  padding-left: 2rem;
+}
+
+.button {
+  background-color: #B2C5C5;
+  border-radius: 8px;
+  box-sizing: content-box;
+  color: white;
+  margin-left: 40px;
+  padding: 10px 20px;
+  width: 160px;
+}
+
+.theme button{
+  align-self: center;
+  background-color: rgb(19, 19, 19);
+  border: 2px solid white;
+  border-radius: 50vh;
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+  padding: 3px 10px;
+}
+
+.theme{
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+/********* MAIN *********/
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.fondo {
+  background-color: #C7CFCE;
+  padding: 50px;
+  width: 100%;
+}
+
+.internacional{
+  background-color: #DDD7C0;
+}
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5em;
+}
+
+.texto {
+  margin-top: 30px;
+}
+
+.card img {
+  border-radius: 40px;
+  height: 400px;
+  padding: 20px;
+  max-width: 35%;
+}
+
+.card h3 {
+  margin-left: 20px;
+}
+
+.card h2{
+  font-size: 30px;
+  padding: 20px;
+  
+}
+
+.card p {
+  font-size: 20px;
+  padding: 20px;
+  text-align: justify;
+}
+
+/********* FOOTER *********/
+footer{
+  background-color: #909D9D;
+  padding: 10px;
+  text-align: center;
+}
+
+/********* TEMA OSCURO *********/
+.dark .theme button{
+  background-color: white;
+  border-color: grey;
+  color: black;
+}
+
+.dark header{
+  background-color: rgb(39, 39, 39);
+}
+
+.dark nav{ 
+  background-color: rgb(19, 19, 19);
+  border-color: black;
+  color: rgb(170, 170, 170);
+}
+
+.dark li {
+  background-color: rgb(56, 55, 55);
+  box-shadow: 0 0.25rem 0.25rem 0 #d4d2d2f5;
+}
+
+.dark a{
+  color: rgb(184, 178, 178);
+}
+
+.dark .card{
+  background-color: rgb(56, 55, 55);
+  color: rgb(184, 178, 178);
+}
+
+.dark footer{
+  background-color: rgb(39, 39, 39);
+  color: rgb(170, 170, 170);
+}

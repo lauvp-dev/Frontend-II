@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap');
+
+:root {
+    --primary: #7898FF;
+    --secondary: #8E64C5;
+    --app-grey: #F2F2F2;
+    --letters: rgb(180, 231, 226);
+  }
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+background: linear-gradient(110deg, var(--primary), var(--secondary));
+}
+
+h1, h2, h3, footer{
+  color:rgba(99, 43, 151, 0.822);
+  padding: 20px;
+  text-align: center;
+}
+
+h2, h3{
+  padding: 5px;
+}
+
+main{
+  margin: 100px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.contenedor, .comentarios, #verMas{
+  background: linear-gradient(110deg, var(--secondary), var(--primary));
+}
+
+.contenedor{
+  color:rgb(180, 231, 226);
+  margin: 25px auto;
+  padding: 25px 50px;
+  width: 500px;
+}
+
+.contenedor input{
+  background-color: rgb(177, 219, 243);
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.contenedor input,label,button{
+  display: block;
+  margin: 20px auto;
+  width: 100%;
+}
+
+.comentarios{
+  width: 500px;
+  margin: 0 auto;
+  padding: 25px 50px;
+  background-color: white;
+}
+
+.comentarios p{
+  background-color: rgb(177, 219, 243);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+form button{
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 10px;
+}
+
+form button[type="submit"]{
+  background-color: rgb(137, 208, 211);
+} 
+
+form button[type="reset"]{
+  background-color: rgb(225, 231, 188);
+  border: 2px rgb(137, 208, 211) solid;
+  color: rgb(104, 101, 101);
+  text-align: center;
+}
+
+#verMas{
+  color:rgb(180, 231, 226);
+  margin: 0 auto;
+  order: 1;
+  padding: 25px 50px;
+  width: 500px;
+}
+
+.oculto{
+  display: none;
+}
